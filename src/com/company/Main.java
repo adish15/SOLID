@@ -3,10 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        CarMaker c=new CarMaker();
-        c.makeCar();
-        BikeMaker b=new BikeMaker();
-        b.makeBike();
+        VehicleInstallation c=new Car();
+        c.assembleVehicle();
+        VehicleInstallation b=new Bike();
+        b.assembleVehicle();
     }
 }
 

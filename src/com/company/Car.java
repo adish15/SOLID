@@ -1,19 +1,30 @@
 package com.company;
 
-public class Car implements EngineInstallation, TyresInstallation, BodyInstallation{
+public class Car implements VehicleInstallation{
+    String tyre="4";
+    String engine="Car Engine";
+    String type="Car";
 
     @Override
     public void engineInstallation() {
-        System.out.println("Car engine installation");
+        System.out.println(engine+"installation");
     }
 
     @Override
     public void tyresInstallation() {
-        System.out.println("Car 4 tyres installation");
+        System.out.println(tyre+" tyres installation");
     }
 
     @Override
     public void bodyInstallation() {
-        System.out.println("Car body installation");
+        System.out.println(type+" body installation");
+    }
+
+    @Override
+    public void assembleVehicle() {
+
+        this.bodyInstallation();
+        this.engineInstallation();
+        this.tyresInstallation();
     }
 }
